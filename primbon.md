@@ -98,3 +98,10 @@ bool = false
 - reference types: slices, maps, channel, pointer, function
     ubah aja, bebas
 
+# interfaces
+intinya supaya bisa panggil func dengan __nama yang sama__.
+
+type bot interfaces {
+    getGreetings() string
+}
+
