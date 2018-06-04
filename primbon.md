@@ -15,7 +15,7 @@
 
 # package
 1. main = executable package
-2. !main = resusable package
+2. !main = reusable package
 
 # array
 1. array = tuples (static / immutable)
