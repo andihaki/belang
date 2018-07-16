@@ -105,3 +105,6 @@ type bot interfaces {
     getGreetings() string
 }
 
+# windows
+setelah go get some/package
+panggilnya di ```%GOPATH%/bin/dep```
