@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <title>Belajar Golang</title>
+</head>
+<body>
+    <h1>{{.PageTitle}}</h1>
+    <h5>Tambahan peer:</h5>
+    
+    {{if .Success}}
+        <h1>Sucess</h1>
+        {{range .Todos}}
+            <li>{{.Title}}</li>
+        {{end}}
+    {{else}}
+        <!-- form -->
+        <form method="POST">
+            <label>Title:</label><br/>
+            <input type="text" name="title"><br/>
+            <input type="submit">
+        </form>
+        <!-- end of <form action=""></form> -->
+        <ul>
+            {{range .Todos}}
+                {{if .Done}}
+                    <li class="done">{{.Title}}</li>
+                {{else}}
+                    <li>{{.Title}}</li>
+                {{end}}
+            {{end}}
+        </ul>
+    {{end}}
+</body>
+</html>
+
+
