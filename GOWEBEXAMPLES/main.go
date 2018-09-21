@@ -32,7 +32,8 @@ var (
 )
 
 func main() {
-	serveHTML()
+	// serveHTML()
+	serveJSON()
 }
 
 func serveMux() {
